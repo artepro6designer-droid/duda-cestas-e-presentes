@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#4a080d">
+  <meta name="description" content="Monte sua cesta personalizada Dudacestas. Escolha produtos e envie seu pedido pelo WhatsApp.">
+  <title>Monte sua cesta | Dudacestas e Presentes</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="catalog-page">
+  <div class="topline">Seu presente começa com uma ideia <span>♥</span></div>
+  <header class="site-header">
+    <a class="brand" href="index.html"><span class="brand-hearts">♡</span><span class="brand-name">Dudacestas</span><span class="brand-sub">♥ e Presentes ♥</span></a>
+    <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false">☰</button>
+    <nav class="main-nav" aria-label="Navegação principal"><a href="index.html">Início</a><a href="contato.html">Contato</a><a class="nav-cta" href="#builder">Criar meu presente <span>↗</span></a></nav>
+  </header>
+
+  <main>
+    <section class="page-hero compact-hero">
+      <span class="kicker">OFICINA DE PRESENTES DUDACESTAS</span>
+      <h1>Vamos montar uma cesta <em>especial?</em></h1>
+      <p>Escolha os itens que combinam com a pessoa presenteada. O ursinho acompanha o trabalho e o total muda a cada escolha.</p>
+      <div class="steps"><span class="step-active">01 <b>Escolha</b></span><i></i><span>02 <b>Revise</b></span><i></i><span>03 <b>Encomende</b></span></div>
+    </section>
+
+    <section class="builder-layout" id="builder">
+      <div class="catalog-column">
+        <div class="catalog-toolbar">
+          <div><span class="kicker">CATÁLOGO PERSONALIZÁVEL</span><h2>Escolha os ingredientes<br>do seu presente</h2></div>
+          <label class="search-box"><span>⌕</span><input id="product-search" type="search" placeholder="Buscar produto..."></label>
+        </div>
+        <div id="category-tabs" class="category-tabs" aria-label="Categorias de produtos"></div>
+        <div id="product-grid" class="product-grid" aria-live="polite"></div>
+        <p class="catalog-disclaimer">Os valores exibidos são referências iniciais para montagem. Produtos, marcas, tamanhos e disponibilidade serão confirmados pela equipe no WhatsApp.</p>
+      </div>
+
+      <aside class="basket-panel">
+        <div class="basket-panel-head">
+          <div><span class="kicker">SEU PRESENTE</span><h2>Minha cesta</h2></div>
+          <span class="basket-count" id="basket-count">0 itens</span>
+        </div>
+        <div class="bear-helper" id="bear-helper">
+          <div class="bear-avatar">🐻</div>
+          <div><b>Oi! Eu sou o Dudu.</b><p id="bear-message">Escolha os primeiros itens e eu começo a montar sua cesta!</p></div>
+        </div>
+        <div class="basket-preview">
+          <div class="preview-ribbon">♡ Dudacestas ♡</div>
+          <div id="basket-items" class="basket-items"><div class="empty-basket"><span>🎁</span><b>Sua cesta está vazia</b><small>Adicione produtos para começar.</small></div></div>
+        </div>
+        <div class="basket-total"><span>Subtotal estimado</span><strong id="basket-total">R$ 0,00</strong></div>
+        <label class="form-label" for="gift-message">Mensagem para acompanhar o presente</label>
+        <textarea id="gift-message" rows="3" placeholder="Ex.: Para você, com todo meu carinho..."></textarea>
+        <label class="form-label" for="customer-notes">Observações (opcional)</label>
+        <textarea id="customer-notes" rows="2" placeholder="Preferências, dúvidas, data desejada..."></textarea>
+        <button id="checkout-button" class="btn btn-gold checkout-button" type="button">Finalizar pelo WhatsApp <span>↗</span></button>
+        <small class="secure-note">Seu pedido será enviado para a equipe confirmar valores e disponibilidade.</small>
+      </aside>
+    </section>
+
+    <section class="how-it-works">
+      <div><span>01</span><b>Escolha</b><p>Adicione a embalagem e os produtos.</p></div>
+      <div><span>02</span><b>Personalize</b><p>Escreva uma mensagem e deixe observações.</p></div>
+      <div><span>03</span><b>Finalize</b><p>Envie seu pedido diretamente pelo WhatsApp.</p></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-brand"><span class="brand-name">Dudacestas</span><span class="brand-sub">♥ e Presentes ♥</span><p>Mais que presentes, espalhamos amor.</p></div>
+    <div><b>Explore</b><a href="index.html">Início</a><a href="cardapio.html">Monte sua cesta</a><a href="contato.html">Contato</a></div>
+    <div><b>Visite a loja</b><p>Avenida Mirassolândia, 995<br>São José do Rio Preto – SP</p><a href="tel:+5517992818415">+55 17 99281-8415</a></div>
+    <div class="footer-bottom">© <span id="year"></span> Dudacestas e Presentes. Feito com ♥.</div>
+  </footer>
+  <div class="walking-worker worker-a" aria-hidden="true">🐻<span>🔧</span></div>
+  <div class="walking-worker worker-b" aria-hidden="true">🐻<span>🎁</span></div>
+  <script src="script.js"></script>
+</body>
+</html>
